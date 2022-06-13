@@ -93,14 +93,6 @@ async def p(ctx, c, m):
 
     await ctx.send(embed = em)
     await bot.get_channel(LOG_SERVER).send(f"#{len(numberlist)} : {result}x")
-    
-@bot.command()
-async def d(ctx): #실제로 충전까지 완료하는 기능은 배포판에 넣으면 나쁘게 사용 될 수 있어서 지웠음요. 테스트 해보고 싶으면 저 사이트 콜백쓰면 댐.
-    em = discord.Embed(title = f"잔액 충전", description = f"디스코드 ID : {ctx.author.id}\nhttps://www.blockonomics.co/pay-url/여기비울게요..\n**꼭!** 위 숫자를 복사해서 신청 해주세요.",color=0x242133)
-    
-    em.set_author(name="HyperReal 100% 공정한 게임")
-    
-    await ctx.send(embed = em)
 
 @bot.command()
 async def h(ctx):
